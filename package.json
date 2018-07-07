@@ -1,5 +1,19 @@
 {
   "name": "decreation",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "@babel/core": "^7.0.0-beta.52",
+    "@babel/preset-env": "^7.0.0-beta.52",
+    "babel-loader": "^8.0.0-beta.4",
+    "react": "^16.4.1"
+  },
+  "scripts": {
+    "heroku-postbuild": "./node_modules/.bin/webpack --config webpack.prod.config.js",
+    "dev": "./node_modules/.bin/webpack --watch"
+  },
+  "devDependencies": {
+    "@webpack-contrib/config-loader": "^1.2.1",
+    "webpack": "^4.15.1",
+    "webpack-command": "^0.4.1"
+  }
 }

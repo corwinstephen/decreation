@@ -34,7 +34,10 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 
 gem "comfortable_mexican_sofa", "~> 2.0.0"
-
+gem 'sdoc', '~> 0.4.0', group: :doc
+gem 'haml'
+gem 'aws-sdk'
+gem 'webpacker', '~> 3.5'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
