@@ -1,0 +1,61 @@
+.projectlist {
+	font-family:$font-title;
+	font-size:24px;
+	font-weight:500;
+	left:50%;
+	line-height:36px;
+	margin-left:-250px;
+	position:absolute;
+	top:50%;
+	transform:translateY(-50%);
+	width:500px;
+
+	ul {
+		list-style:none;
+		text-align:center;
+
+		li {
+			display:inline-block;
+			letter-spacing:1.2px;
+
+
+			span {
+			  position: relative;
+			  display: block;
+			  cursor: pointer;
+			}
+
+			span:before, span:after {
+			  content: '';
+			  position: absolute;
+			  width: 0%;
+			  height: 7px;
+			  top: 50%;
+			  margin-top: -3.5px;
+			  background: #333;
+			}
+
+			span:before, span:after {
+			  left: -2.5px;
+			}
+
+			span:after {
+			  right: 2.5px;
+			  background: #333;
+			  transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+			}
+
+			span:hover:before {
+			  background: #333;
+			  width: 100%;
+			  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+			}
+
+			span:hover:after {
+			  background: transparent;
+			  width: 100%;
+			  transition: 0s;
+			}
+		}
+	}
+}

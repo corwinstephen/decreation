@@ -3,6 +3,12 @@ label: Default Seed Layout
 app_layout: application
 
 [content]
+<div class='mainlogo'>
+	<a href='/'>
+		{{ cms:file_link 10, as: image }}
+	</a>
+</div>
+
 <div class='mainnav left'>
 	Archive
 </div>
@@ -15,6 +21,23 @@ app_layout: application
 	S***F
 </div>
 
+<div class='projectlist'>
+	<ul>
+		<li><span>thesis</span></li> /
+		<li><span>city of dreams</span></li> /
+		<li><span>the unseen</span></li> /
+		<li><span>SXSW 2017</span></li> /
+		<li><span>wamdue project</span></li> /
+		<li><span>am:pm</span></li> /
+		<li><span>citizenship</span></li> /
+		<li><span>crisis</span></li> /
+		<li><span>impakt</span></li> /
+		<li><span>10th step</span></li> /
+		<li><span>haven</span></li> /
+		<li><span>akademi</span></li> /
+		<li><span>branching</span></li> /
+	</ul>
+</div>
 {{ cms:markdown content }}
 
 [js]
