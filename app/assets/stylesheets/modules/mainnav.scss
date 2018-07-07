@@ -1,0 +1,26 @@
+.mainnav {
+	&.left {
+		position:absolute;
+		top:50%;
+		left:1rem;
+		margin-left:-7px;
+		margin-top:-20px;
+	  transform: rotate(90deg);
+	}
+
+	&.right {
+		position:absolute;
+		top:50%;
+		right:1rem;
+		margin-top:-20px;
+	  transform: rotate(-90deg);
+	}
+
+	&.top {
+		position:absolute;
+		top:1rem;
+	  transform: rotate(180deg);
+	  left:50%;
+	  margin-left:-20px;
+	}
+}
