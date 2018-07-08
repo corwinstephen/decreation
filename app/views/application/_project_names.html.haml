@@ -1,0 +1,5 @@
+- @cms_site.pages.find_by(label: 'index').children.published.each do |page|
+	%li
+		%span
+			= link_to page.label, page.full_path
+		= "/"
