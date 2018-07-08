@@ -13,6 +13,19 @@ app_layout: application
 
 
 [js]
+<script type="text/javascript">
+	$(document).ready(function(){
+		const ogImgSrc = $('.featuredimage-background img').attr('src');
+
+		$('.projectlist-item').hover(function(e){
+			let projectId = $(this).data('id');
+			let imageUrl = _.findWhere(Decreation.projectImages, { id: projectId }).image_url;
+			$('.featuredimage-background img').attr('src', imageUrl);
+		}, function(){
+			$('.featuredimage-background img').attr('src', ogImgSrc);
+		});
+	});	
+</script>
 
 [css]
 

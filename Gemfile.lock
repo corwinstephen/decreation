@@ -652,7 +652,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.12.2)
-    comfortable_mexican_sofa (2.0.15)
+    comfortable_mexican_sofa (2.0.17)
       active_link_to (>= 1.0.0)
       comfy_bootstrap_form (>= 4.0.0)
       haml-rails (>= 1.0.0)
@@ -660,10 +660,10 @@ GEM
       kramdown (>= 1.0.0)
       mimemagic (>= 0.3.2)
       mini_magick (>= 4.8.0)
-      rails (>= 5.2.0.rc1)
+      rails (>= 5.2.0)
       rails-i18n (>= 5.0.0)
       sass-rails (>= 5.0.0)
-    comfy_bootstrap_form (4.0.3)
+    comfy_bootstrap_form (4.0.4)
       rails (>= 5.0.0)
     concurrent-ruby (1.0.5)
     crass (1.0.4)
@@ -700,7 +700,7 @@ GEM
     jquery-slick-rails (1.9.0)
       railties (>= 3.1)
     json (1.8.6)
-    kramdown (1.16.2)
+    kramdown (1.17.0)
     listen (3.1.5)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
@@ -830,7 +830,7 @@ DEPENDENCIES
   byebug
   capybara (~> 2.13)
   coffee-rails (~> 4.2)
-  comfortable_mexican_sofa (~> 2.0.0)
+  comfortable_mexican_sofa (~> 2.0.17)
   haml
   jbuilder (~> 2.5)
   jquery-slick-rails

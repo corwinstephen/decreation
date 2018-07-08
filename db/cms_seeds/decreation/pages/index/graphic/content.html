@@ -1,6 +1,8 @@
 [attributes]
-label: index
+label: graphic
 layout: home
+categories:
+  - sidenav
 
 [checkbox published]
 true
@@ -8,6 +10,6 @@ true
 [textarea content]
 <div class='projectlist'>
 	<ul>
-		{{ cms:partial "project_names", category: "" }}
+		{{ cms:partial project_names, category: 'graphic' }}
 	</ul>
 </div>

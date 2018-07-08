@@ -1,0 +1,46 @@
+[attributes]
+label: home
+
+[content]
+
+{{cms:partial project_images}}
+
+<div class='featuredimage-background'>
+	{{ cms:helper homepage_image }}
+</div>
+
+<div class='categories'>
+	<ul>
+		{{cms:partial sidenav_items}}
+	</ul>
+</div>
+
+<div class='mainnav top'>
+	<a href='/about'>About</a>
+</div>
+
+<div class='mainnav bottom'>
+	<a href='https://decreation-studio.tumblr.com/'>S***F</a>
+</div>
+
+{{ cms:textarea content }}
+
+<ul class="contact home">
+	{{cms:snippet contact}}
+</ul>
+
+[js]
+$(document).ready(function(){
+	const ogImgSrc = $('.featuredimage-background img').attr('src');
+
+	$('.projectlist-item').hover(function(e){
+		let projectId = $(this).data('id');
+		let imageUrl = _.findWhere(Decreation.projectImages, { id: projectId }).image_url;
+		$('.featuredimage-background img').attr('src', imageUrl);
+	}, function(){
+		$('.featuredimage-background img').attr('src', ogImgSrc);
+	});
+});	
+
+[css]
+

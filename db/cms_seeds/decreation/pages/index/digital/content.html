@@ -1,13 +1,17 @@
 [attributes]
-label: index
+label: digital
 layout: home
+categories:
+  - sidenav
 
 [checkbox published]
 true
 
+
+
 [textarea content]
 <div class='projectlist'>
 	<ul>
-		{{ cms:partial "project_names", category: "" }}
+		{{ cms:partial project_names, category: 'digital' }}
 	</ul>
 </div>

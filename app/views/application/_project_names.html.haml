@@ -1,4 +1,4 @@
-- project_pages.each do |page|
+- project_pages(category).each do |page|
 	%li.projectlist-item{data: { id: page.id }}
 		%span
 			= link_to page.label, page.full_path

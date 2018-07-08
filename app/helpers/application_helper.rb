@@ -11,8 +11,14 @@ module ApplicationHelper
 		image_tag(rails_blob_path(images.offset(offset).first.attachment, disposition: 'attachment'))
 	end
 
-	def project_pages
-		@cms_site.pages.find_by(label: 'projects').children.published
+	def sidenav_pages
+		ages = @cms_site.pages.for_category('sidenav').published
+	end
+
+	def project_pages(category = nil)
+		pages = @cms_site.pages.find_by(label: 'projects').children.published
+		pages = pages.for_category(category) if category
+		pages
 	end
 
 	def project_image_urls
