@@ -23,7 +23,8 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
-body {
+body, html {
 	font-family: $font-body;
 	color:#333;
+	min-height:100vh;
 }

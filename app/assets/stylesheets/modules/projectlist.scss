@@ -2,17 +2,20 @@
 	font-family:$font-title;
 	font-size:24px;
 	font-weight:500;
-	left:50%;
 	line-height:36px;
-	margin-left:-250px;
-	position:absolute;
-	top:50%;
-	transform:translateY(-50%);
-	width:500px;
+
+	@media (min-width: $mobile-break-width){
+		margin-left:-250px;
+		position:absolute;
+		left:50%;
+		top:50%;
+		width:500px;
+		transform:translateY(-50%);
+		text-align:center;
+	}
 
 	ul {
 		list-style:none;
-		text-align:center;
 
 		li {
 			display:inline-block;
@@ -20,5 +23,11 @@
 
 			@extend .hoverlinks;
 		}
+	}
+
+	@media (max-width: $mobile-break-width){
+		width:100%;
+		padding:0 1rem;
+		margin-top:2rem;
 	}
 }

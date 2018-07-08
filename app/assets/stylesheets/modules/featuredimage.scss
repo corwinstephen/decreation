@@ -3,5 +3,14 @@
 	left:50%;
 	top:50%;
 	transform:translateX(-50%) translateY(-50%);
-	opacity:.5;
+
+	img {
+		opacity:.5;
+		max-height:80vh;
+
+		@media (max-width: $mobile-break-width){
+			max-height:33.3333vh;
+			max-width:66.666vw;
+		}
+	}
 }

@@ -1,9 +1,14 @@
 .mainlogo {
 	position:absolute;
-	left:2rem;
+	left:1rem;
 	top:1rem;
 
 	img {
 		width:100px;
+	}
+
+	@media (max-width: $mobile-break-width){
+		position:relative;
+		display:block;
 	}
 }
