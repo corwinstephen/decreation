@@ -1,0 +1,38 @@
+.hoverlinks {
+	span {
+	  position: relative;
+	  cursor: pointer;
+	}
+
+	span:before, span:after {
+	  content: '';
+	  position: absolute;
+	  width: 0%;
+	  height: 7px;
+	  top: 50%;
+	  margin-top: -3.5px;
+	  background: #333;
+	}
+
+	span:before, span:after {
+	  left: -1px;
+	}
+
+	span:after {
+	  right: 2.5px;
+	  background: #333;
+	  transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+	}
+
+	span:hover:before {
+	  background: #333;
+	  width: 100%;
+	  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+	}
+
+	span:hover:after {
+	  background: transparent;
+	  width: 100%;
+	  transition: 0s;
+	}
+}

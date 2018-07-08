@@ -1,0 +1,28 @@
+.categories {
+	@extend .hoverlinks;
+	position:absolute;
+	right:-82px;
+	transform: rotate(90deg);
+	margin-top:120px;
+	top:1rem;
+	font-size:14px;
+
+	ul {
+		li {
+			display:inline-block;
+			&:after {
+				margin:0 5px;
+				content:'/';
+			}
+			&:first-child:before {
+				margin-right:5px;
+				content:'/ ';	
+			}
+
+			span:before, span:after {
+				height:3px !important;
+				margin-top: -1.5px !important;
+			}
+		}
+	}
+}

@@ -1,14 +1,26 @@
 ul.contact {
 	position:absolute;
-	right:1rem;
+	left:1rem;
 	bottom:1rem;
 	font-size:11px;
 	list-style:none;
-	text-align:right;
+	transform: rotate(-90deg);
+	margin-bottom:114px;
+	margin-left:-125px;
 
 	li {
 		@extend .hoverlinks;
 		margin-top:4px;
+		display:inline-block;
+
+		span {
+			display:block;
+		}
+
+		span:before, span:after {
+			height:3px !important;
+			margin-top: -1.5px !important;
+		}
 
 		a {
 			text-decoration:none;
