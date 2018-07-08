@@ -2,11 +2,18 @@
 label: project
 
 [content]
-{{cms:text name}}
-{{cms:text org}}
-{{cms:text date}}
-{{cms:wysiwyg description}}
-{{cms:files images, as: image}}
+<div class='featuredimage-background'>
+	{{cms:files images, as: image}}
+</div>
+
+<ul class='projectinfo'>
+	<li class='margin-bottom'><a href='/'>X</a></li>
+	<li>{{cms:text name}}</li>
+	<li>{{cms:text org}}</li>
+	<li>{{cms:text date}}</li>
+	<li class='margin-top'>{{cms:wysiwyg description}}</li>
+</ul>
+
 
 [js]
 

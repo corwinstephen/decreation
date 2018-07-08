@@ -2,9 +2,10 @@
 	position:absolute;
 	left:1rem;
 	top:1rem;
+	height:60px;
 
 	img {
-		width:100px;
+		height:100%;
 	}
 
 	@media (max-width: $mobile-break-width){
