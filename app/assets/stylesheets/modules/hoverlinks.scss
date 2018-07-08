@@ -1,10 +1,10 @@
 .hoverlinks {
-	span {
+	a {
 	  position: relative;
 	  cursor: pointer;
 	}
 
-	span:before, span:after {
+	a:before, a:after {
 	  content: '';
 	  position: absolute;
 	  width: 0%;
@@ -14,23 +14,23 @@
 	  background: #333;
 	}
 
-	span:before, span:after {
+	a:before, a:after {
 	  left: -1px;
 	}
 
-	span:after {
+	a:after {
 	  right: 2.5px;
 	  background: #333;
 	  transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
 	}
 
-	span:hover:before {
+	a:hover:before {
 	  background: #333;
 	  width: 100%;
 	  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
 	}
 
-	span:hover:after {
+	a:hover:after {
 	  background: transparent;
 	  width: 100%;
 	  transition: 0s;

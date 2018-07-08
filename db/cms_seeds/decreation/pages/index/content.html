@@ -8,9 +8,44 @@ layout: default
 [checkbox published]
 true
 
-[content]
+[textarea content]
+<div class='featuredimage-background'>
+	{{ cms:file_link 15, as: image }}
+</div>
+
+<div class='categories'>
+	<ul>
+		<li><span>graphic</span></li>
+		<li><span>digital</span></li>
+		<li><span>identity</span></li>
+		<li><span>enviro</span></li>
+	</ul>
+</div>
+
+<div class='mainnav top'>
+	<a href='/about'>About</a>
+</div>
+
+<div class='mainnav bottom'>
+	<a href='https://decreation-studio.tumblr.com/'>S***F</a>
+</div>
+
 <div class='projectlist'>
 	<ul>
 		{{ cms:partial "project_names" }}
 	</ul>
 </div>
+
+<ul class="contact">
+	<li>
+		<span><a href='tel:+18456616747'>+001.845.661.6747</a></span>
+		<span><a href='mailto:dougal@decreation.studio'>dougal@decreation.studio</a></span>
+	</li>
+	<li>
+		<span><a href='#'>Dribble</a></span>
+		<span><a href='#'>Instagram</a></span>
+	</li>
+	<li>
+		<span><a href='#'>Vimeo</a></span>
+	</li>
+</ul>
