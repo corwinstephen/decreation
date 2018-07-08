@@ -31,4 +31,7 @@ ul.contact {
 		}
 	}
 
+	@media (max-width: $mobile-break-width){
+		display:none;
+	}
 }

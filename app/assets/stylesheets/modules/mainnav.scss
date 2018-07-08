@@ -2,19 +2,35 @@
 	font-family:'Prophet', sans-serif;
 	font-weight:500;
 	text-transform:uppercase;
+	position:absolute;
 
-	&.bottom {
-		position:absolute;
-		bottom:1rem;
-	  left:50%;
-	  margin-left:-20px;
+	@media (min-width: $mobile-break-width){
+		&.bottom {
+			bottom:1rem;
+		  left:50%;
+		  margin-left:-20px;
+		}
+
+		&.top {
+			position:absolute;
+			top:1rem;
+		  transform: rotate(180deg);
+		  left:50%;
+		  margin-left:-20px;
+		}
 	}
 
-	&.top {
-		position:absolute;
-		top:1rem;
-	  transform: rotate(180deg);
-	  left:50%;
-	  margin-left:-20px;
+	@media (max-width: $mobile-break-width){
+		bottom:1rem;
+		width:50%;
+		text-align:center;
+
+		&.top {
+			left:0;
+		}
+
+		&.bottom {
+			right:0;
+		}
 	}
 }
