@@ -1,6 +1,21 @@
 [attributes]
 label: about
-layout: nested
+layout: default
+
+[checkbox published]
+true
 
 [textarea content]
-Child B Page Seed Content
+
+<div class='mainnav bottom'>
+	<a href='/'>Back</a>
+</div>
+
+<div class='fullpagecontent'>
+	{{ cms:wysiwyg about }}
+</div>
+
+[wysiwyg about]
+Decreation is a creative practice developing solutions for art, design, and culture. It is run by Dougal Henken.
+<br /><br />
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu iaculis elit. Vivamus rutrum aliquet metus, vel sodales libero. Maecenas erat purus, mollis non nisl quis, commodo facilisis dolor. Aliquam metus lacus, sagittis id lectus quis, tempor elementum lorem. Quisque nec erat ipsum. Phasellus dignissim lectus ac massa semper tristique. Aliquam eu mauris sed erat feugiat iaculis at non felis. Donec aliquet nisi at dolor consequat, nec pretium nisl hendrerit. Quisque eu nisl id velit varius eleifend sit amet sed sem. Aliquam erat volutpat. Sed eleifend tempor enim, maximus rhoncus arcu.

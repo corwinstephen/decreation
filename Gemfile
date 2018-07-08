@@ -38,7 +38,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'haml'
 gem 'aws-sdk'
 gem 'webpacker', '~> 3.5'
-gem 'high_voltage', '~> 3.1'
+gem "jquery-slick-rails"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

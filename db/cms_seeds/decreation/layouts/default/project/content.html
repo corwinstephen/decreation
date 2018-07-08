@@ -2,8 +2,11 @@
 label: project
 
 [content]
+{{cms:files images, render: false}}
 <div class='featuredimage-background'>
-	{{cms:files images, as: image}}
+	<div class='slick'>
+		{{cms:helper render_project_images}}
+	</div>
 </div>
 
 <ul class='projectinfo'>
@@ -16,6 +19,16 @@ label: project
 
 
 [js]
+$(document).ready(function(){
+	$('.slick').slick({
+	  responsive: true,
+	  adaptiveHeight: true,
+	  variableWidth: true,
+	  arrows: true,
+	  mobileFirst: true,
+	  centerMode: true
+	});
+});
 
 [css]
 

@@ -2,15 +2,12 @@
 label: index
 layout: default
 
-[date published_on]
-2015-10-31
-
 [checkbox published]
 true
 
 [textarea content]
 <div class='featuredimage-background'>
-	{{ cms:file_link 15, as: image }}
+	{{ cms:helper homepage_image }}
 </div>
 
 <div class='categories'>
