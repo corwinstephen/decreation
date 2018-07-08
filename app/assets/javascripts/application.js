@@ -13,4 +13,5 @@
 //= require rails-ujs
 //= require jquery
 //= require jquery.slick
+//= require underscore
 //= require_tree .
