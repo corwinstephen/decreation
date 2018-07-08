@@ -3,6 +3,7 @@
 	font-weight:500;
 	text-transform:uppercase;
 	position:absolute;
+	@extend .hoverlinks;
 
 	@media (min-width: $mobile-break-width){
 		&.bottom {
