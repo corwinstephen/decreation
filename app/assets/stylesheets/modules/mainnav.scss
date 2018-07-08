@@ -26,11 +26,13 @@
 		text-align:center;
 
 		&.top {
-			left:0;
+			left:1rem;;
+			text-align:left;
 		}
 
 		&.bottom {
-			right:0;
+			right:1rem;
+			text-align:right;
 		}
 	}
 }
