@@ -1,15 +1,15 @@
 .projectlist {
 	font-family:$font-title;
-	font-size:24px;
+	font-size:32px;
 	font-weight:500;
-	line-height:36px;
+	line-height:42px;
 
 	@media (min-width: $mobile-break-width){
-		margin-left:-250px;
+		margin-left:-325px;
 		position:absolute;
 		left:50%;
 		top:50%;
-		width:500px;
+		width:650px;
 		transform:translateY(-50%);
 		text-align:center;
 	}
