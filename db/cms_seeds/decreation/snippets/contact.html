@@ -15,7 +15,7 @@ label: Contact
 </li>
 
 <script type="text/javascript">
-	$(document).ready(function(){
+	$(document).on('turbolinks:load', function(){
 		function getRandomPosition(element) {
 			var x = document.body.offsetHeight-element.clientHeight;
 			var y = document.body.offsetWidth-element.clientWidth;
