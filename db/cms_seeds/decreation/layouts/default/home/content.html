@@ -31,6 +31,8 @@ label: home
 
 [js]
 $(document).on('turbolinks:load', function(){
+	Turbolinks.clearCache();
+	
 	const ogImgSrc = $('.featuredimage-background img').attr('src');
 
 	$('.projectlist-item').hover(function(e){
@@ -40,7 +42,13 @@ $(document).on('turbolinks:load', function(){
 	}, function(){
 		$('.featuredimage-background img').attr('src', ogImgSrc);
 	});
+
+	$('.projectlist').slideDown();
+});
+
+$(document).on('turbolinks:request-start', function(){
+	$('.projectlist').slideUp();
 });
 
 [css]
-
+.projectlist{ display:none; }
