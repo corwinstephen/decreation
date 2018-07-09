@@ -11,4 +11,4 @@ amazon:
   access_key_id: "AKIAJB2L4IMSI3FXJT3Q"
   secret_access_key: "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"
   bucket: "decreation"
-  region: "us-west"
+  region: "us-west-2"
