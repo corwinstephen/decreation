@@ -31,6 +31,13 @@ label: home
 
 [js]
 $(document).on('turbolinks:load', function(){
+	// Random color
+	$('body').css('background-color', randomColor({luminosity: 'light'}));
+	$('.projectlist a, .projectlist li').css('color', randomColor({luminosity: 'bright'}));
+});
+
+$(document).on('turbolinks:load', function(){
+	// Don't cache pages
 	Turbolinks.clearCache();
 	
 	const ogImgSrc = $('.featuredimage-background img').attr('src');

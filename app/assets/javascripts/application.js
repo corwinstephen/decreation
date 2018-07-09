@@ -16,4 +16,5 @@
 //= require jquery.slick
 //= require underscore
 //= require instafeed
+//= require randomColor
 //= require_tree .
