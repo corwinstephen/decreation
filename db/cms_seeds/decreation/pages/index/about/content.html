@@ -8,7 +8,12 @@ true
 [textarea content]
 
 <div class='mainnav bottom'>
-	<a href='/'>Back</a>
+	<a href='/'>
+		Back
+		<div>
+			{{cms:file backbutton, as: image, }}
+		</div>
+	</a>
 </div>
 
 <div class='fullpagecontent'>
@@ -24,3 +29,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu iaculis elit. 
 <ul class="contact">
 	{{cms:snippet contact}}
 </ul>
+
+[file backbutton]
+back.png
