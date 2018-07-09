@@ -37,7 +37,6 @@ gem "comfortable_mexican_sofa", "~> 2.0.17"
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'haml'
 gem 'aws-sdk'
-gem "aws-sdk-s3", require: false
 gem 'webpacker', '~> 3.5'
 gem "jquery-slick-rails"
 
