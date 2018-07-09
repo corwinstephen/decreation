@@ -7,14 +7,14 @@ ul.contact {
 		bottom:1rem;
 		font-size:14px;
 		transform: rotate(-90deg);
-		margin-bottom:170px;
-		margin-left:-170px;
+		margin-bottom:190px;
+		margin-left:-190px;
 	}
 
 	li {
 		@extend .hoverlinks;
 		margin-top:4px;
-		margin-right:1rem;
+		margin-right:2rem;
 		float:left;
 
 		display:inline-block;
