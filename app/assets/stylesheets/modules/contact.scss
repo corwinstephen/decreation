@@ -40,4 +40,15 @@ ul.contact {
 	@media (max-width: $mobile-break-width){
 		display:none;
 	}
+
+	&.mobile {
+		display:none;
+
+		@media (max-width: $mobile-break-width){
+			margin-bottom:2rem;
+			display:block;
+		}
+	}
+
+
 }

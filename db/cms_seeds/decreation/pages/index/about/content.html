@@ -17,6 +17,10 @@ true
 </div>
 
 <div class='aboutpage'>
+	<ul class="contact mobile cf">
+		{{cms:snippet contact}}
+	</ul>
+
 	<div class='aboutpage-2col'>
 		<div class='aboutpage-about'>
 			{{ cms:wysiwyg about }}
@@ -31,7 +35,7 @@ true
 		</div>
 	</div>
 
-	<div class='aboutpage-1col'>
+	<div class='aboutpage-1col cf'>
 		{{ cms:file aboutimage, as: image }}
 
 		<ul class="contact">
