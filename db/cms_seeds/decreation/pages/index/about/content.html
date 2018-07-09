@@ -18,7 +18,7 @@ true
 
 <div class='aboutpage'>
 	<div class='aboutpage-2col'>
-		<div style='margin-bottom:3rem;'>
+		<div class='aboutpage-about'>
 			{{ cms:wysiwyg about }}
 		</div>
 
@@ -32,8 +32,8 @@ true
 	</div>
 
 	<div class='aboutpage-1col'>
-		{{ cms:file_link 16, as: image }}
-		
+		{{ cms:file aboutimage, as: image }}
+
 		<ul class="contact">
 			{{cms:snippet contact}}
 		</ul>
@@ -42,3 +42,6 @@ true
 
 [wysiwyg about]
 DECREATION is independent design studio specializing in graphic and digital solutions across multiple media.  It works to develop novel solutions for a wide range of clients. It is located on the internet and operated by Dougal Henken.
+
+[file aboutimage]
+aboutimage.png

@@ -2,17 +2,22 @@
 	@media (min-width: $mobile-break-width){
 		box-sizing:border-box;
 		padding:100px 0;
-		width:1000px;
+		width:80vw;
+		min-width:777px;
 		font-size:20px;
 		line-height:26px;
 		max-height:100vh;
 		overflow:scroll;
 		margin-left:150px;
 
+		.aboutpage-about {
+			margin-bottom:3rem;
+		}
+
 		.aboutpage-2col, .aboutpage-1col {
 			box-sizing:border-box;
-			padding-right:1rem;
-			padding-bottom:1rem;
+			padding-right:3rem;
+			padding-bottom:3rem;
 		}
 
 		.aboutpage-2col {
@@ -23,12 +28,18 @@
 			.aboutpage-1col {
 				width:50%;
 				float:left;
+
 			}
 		}
 
 		.aboutpage-1col {
 			width:33%;
 			float:left;
+
+			img {
+				width:100%;
+				margin-bottom:1rem;
+			}
 		}
 
 	}
@@ -38,5 +49,18 @@
 		line-height:30px;
 		margin-top:2rem;
 		padding:0 1rem;
+		padding-bottom:3rem;
+
+		.aboutpage-about {
+			margin-bottom:1rem;
+		}
+
+		.aboutpage-2col, .aboutpage-1col {
+			margin-bottom:1rem;
+		}
+
+		img {
+			max-width:100%;
+		}
 	}
 }
