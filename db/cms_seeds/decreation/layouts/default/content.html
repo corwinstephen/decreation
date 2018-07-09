@@ -3,14 +3,15 @@ label: default
 app_layout: application
 
 [content]
-<div class='mainlogo'>
-	<a href='/'>
-		{{ cms:file_link 10, as: image }}
-	</a>
+<div id='main'>
+	<div class='mainlogo'>
+		<a href='/'>
+			{{ cms:file_link 10, as: image }}
+		</a>
+	</div>
+
+	{{ cms:textarea content }}
 </div>
-
-{{ cms:textarea content }}
-
 
 [js]
 <script type="text/javascript">

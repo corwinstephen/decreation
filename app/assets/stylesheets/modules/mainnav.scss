@@ -39,6 +39,10 @@
 		&.bottom {
 			right:1rem;
 			text-align:right;
+
+			img {
+		  	display:none;
+		  }
 		}
 	}
 }
