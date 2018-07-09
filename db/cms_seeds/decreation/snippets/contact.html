@@ -8,8 +8,44 @@ label: Contact
 </li>
 <li>
 	<span><a href='#'>Dribble</a></span>
-	<span><a href='#'>Instagram</a></span>
+	<span><a id='instalink' href='#'>Instagram</a></span>
 </li>
 <li>
 	<span><a href='#'>Vimeo</a></span>
 </li>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		function getRandomPosition(element) {
+			var x = document.body.offsetHeight-element.clientHeight;
+			var y = document.body.offsetWidth-element.clientWidth;
+			var randomX = Math.floor(Math.random()*x);
+			var randomY = Math.floor(Math.random()*y);
+			return [randomX,randomY];
+		}
+
+		var container = document.createElement('div');
+		container.setAttribute("style", "position:absolute; display:none;");
+		container.setAttribute("id", "instafeed");
+		document.body.appendChild(container);
+
+		// For Insta post
+	  var feed = new Instafeed({
+	      get: 'user',
+	      userId: '8177593835',
+	      accessToken: '8177593835.1677ed0.62934eb186ec4789a075e010de584090',
+	      clientId: 'd6b06b6e10fb48b7b1a5e6cab539d789',
+	      resolution: 'low_resolution'
+	  });
+	  feed.run();
+
+	  $('#instalink').hover(function(){
+	  	var xy = getRandomPosition(container);
+			container.style.top = xy[0] - 153 + 'px';
+			container.style.left = xy[1] - 153 + 'px';
+	  	$('#instafeed').show();
+	  }, function(){
+	  	$('#instafeed').hide();
+	  });
+	});
+</script>

@@ -15,4 +15,5 @@
 //= require jquery
 //= require jquery.slick
 //= require underscore
+//= require instafeed
 //= require_tree .
