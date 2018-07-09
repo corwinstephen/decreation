@@ -8,7 +8,7 @@ test:
  
 amazon:
   service: S3
-  access_key_id: "AKIAJTVTUBKFN7BA45SQ"
-  secret_access_key: "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"
+  access_key_id: <%= ENV['ACCESS_KEY_ID'] %>
+  secret_access_key: <%= ENV['SECRET_ACCESS_KEY'] %>
   bucket: "decreation"
   region: "us-west-2"

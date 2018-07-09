@@ -1,12 +1,36 @@
-.fullpagecontent {
+.aboutpage {
 	@media (min-width: $mobile-break-width){
-		margin:0 auto;
 		box-sizing:border-box;
-		line-height:36px;
-		padding:100px 5rem;
-		font-size:24px;
+		padding:100px 0;
+		width:1000px;
+		font-size:20px;
+		line-height:26px;
 		max-height:100vh;
 		overflow:scroll;
+		margin-left:150px;
+
+		.aboutpage-2col, .aboutpage-1col {
+			box-sizing:border-box;
+			padding-right:1rem;
+			padding-bottom:1rem;
+		}
+
+		.aboutpage-2col {
+			width:66%;
+			float:left;
+			margin-bottom:3rem;
+
+			.aboutpage-1col {
+				width:50%;
+				float:left;
+			}
+		}
+
+		.aboutpage-1col {
+			width:33%;
+			float:left;
+		}
+
 	}
 
 	@media (max-width: $mobile-break-width){
