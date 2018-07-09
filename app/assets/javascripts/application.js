@@ -11,7 +11,7 @@
 // about supported directives.
 //
 //= require rails-ujs
-//= turbolinks
+//= require turbolinks
 //= require jquery
 //= require jquery.slick
 //= require underscore

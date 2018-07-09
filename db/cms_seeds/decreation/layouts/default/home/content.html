@@ -30,7 +30,7 @@ label: home
 </ul>
 
 [js]
-$(document).ready(function(){
+$(document).on('turbolinks:load', function(){
 	const ogImgSrc = $('.featuredimage-background img').attr('src');
 
 	$('.projectlist-item').hover(function(e){
