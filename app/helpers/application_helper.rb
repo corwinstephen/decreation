@@ -16,6 +16,9 @@ module ApplicationHelper
 	end
 
 	def project_pages(category = nil)
+		# Hack while waiting for partial locals fix
+		category = params[:cms_path]
+
 		pages = @cms_site.pages.find_by(label: 'projects').children.published
 		pages = pages.for_category(category) if category
 		pages
