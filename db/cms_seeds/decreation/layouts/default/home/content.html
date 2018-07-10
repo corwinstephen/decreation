@@ -29,13 +29,9 @@ label: home
 	{{cms:snippet contact}}
 </ul>
 
-[js]
-$(document).on('turbolinks:load', function(){
-	// Random color
-	$('body').css('background-color', randomColor({luminosity: 'light'}));
-	$('.projectlist a, .projectlist li').css('color', randomColor({luminosity: 'bright'}));
-});
+{{cms:snippet color}}
 
+[js]
 $(document).on('turbolinks:load', function(){
 	// Don't cache pages
 	Turbolinks.clearCache();

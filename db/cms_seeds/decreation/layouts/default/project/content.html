@@ -26,9 +26,12 @@ label: project
 	{{cms:helper render_project_images}}
 </div>
 
-
+{{cms:snippet color}}
 [js]
 $(document).on('turbolinks:load', function(){
+	// Don't cache pages
+	Turbolinks.clearCache();
+	
 	$('.slick').slick({
 	  focusOnSelect: true,
 	  adaptiveHeight: true,

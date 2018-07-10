@@ -4,6 +4,8 @@ ul.projectinfo {
 	top:60px;
 	list-style:none;
 	line-height:22px;
+	background-color:#fff;
+	padding:1rem;
 
 	@media (min-width: $mobile-break-width){
 		width:400px;
