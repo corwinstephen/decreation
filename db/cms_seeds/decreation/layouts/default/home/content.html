@@ -29,26 +29,9 @@ label: home
 	{{cms:snippet contact}}
 </ul>
 
-{{cms:snippet color}}
+{{ cms:asset default, type: js, as: tag }}
 
 [js]
-$(document).on('turbolinks:load', function(){
-	// Don't cache pages
-	Turbolinks.clearCache();
-	
-	const ogImgSrc = $('.featuredimage-background img').attr('src');
-
-	$('.projectlist-item').hover(function(e){
-		let projectId = $(this).data('id');
-		let imageUrl = _.findWhere(Decreation.projectImages, { id: projectId }).image_url;
-		$('.featuredimage-background img').attr('src', imageUrl);
-	}, function(){
-		$('.featuredimage-background img').attr('src', ogImgSrc);
-	});
-
-	$('.projectlist').slideDown();
-});
-
 $(document).on('turbolinks:request-start', function(){
 	$('.projectlist').slideUp();
 });

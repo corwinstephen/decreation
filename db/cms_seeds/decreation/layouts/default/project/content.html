@@ -12,8 +12,6 @@ label: project
 
 <div class='mobile margin-top margin-bottom'>{{cms:file featured_image, as: image}}</div>
 
-<span class='projectinfo-bigtitle'>{{cms:text name}}</span>
-
 <ul class='projectinfo'>
 	<li class='margin-bottom'><a class='xicon' href='/'>{{ cms:file_link 19, as: image }}</a></li>
 	<li>{{cms:text name}}</li>
@@ -26,12 +24,13 @@ label: project
 	{{cms:helper render_project_images}}
 </div>
 
-{{cms:snippet color}}
+{{ cms:asset default, type: js, as: tag }}
+
 [js]
-$(document).on('turbolinks:load', function(){
+$(document).ready(function(){
 	// Don't cache pages
 	Turbolinks.clearCache();
-	
+
 	$('.slick').slick({
 	  focusOnSelect: true,
 	  adaptiveHeight: true,
