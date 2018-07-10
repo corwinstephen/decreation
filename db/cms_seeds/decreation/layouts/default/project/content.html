@@ -5,9 +5,12 @@ label: project
 {{cms:files images, render: false}}
 <div class='featuredimage-background desktop'>
 	<div class='slick'>
+		<div>{{cms:file featured_image, as: image}}</div>
 		{{cms:helper render_project_images}}
 	</div>
 </div>
+
+<div class='mobile margin-top margin-bottom'>{{cms:file featured_image, as: image}}</div>
 
 <ul class='projectinfo'>
 	<li class='margin-bottom'><a class='xicon' href='/'>{{ cms:file_link 19, as: image }}</a></li>
@@ -23,7 +26,7 @@ label: project
 
 
 [js]
-$(document).ready(function(){
+$(document).on('turbolinks:load', function(){
 	$('.slick').slick({
 	  responsive: true,
 	  adaptiveHeight: true,

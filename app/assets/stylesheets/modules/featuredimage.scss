@@ -8,25 +8,25 @@
 	overflow:hidden;
 	opacity:.7;
 
-	.slick-initialized {
-		.slick-slide {
-			max-width:80vw;
-			max-height:80vh;
+	// .slick-initialized {
+	// 	.slick-slide {
+	// 		max-width:80vw;
+	// 		max-height:80vh;
 
-			img {
-				max-width:80vw;
-				max-height:80vh;				
-			}
-		}
-	}
+	// 		img {
+	// 			max-width:80vw;
+	// 			max-height:80vh;				
+	// 		}
+	// 	}
+	// }
 
-	.slick-slide {
-		opacity:0;
+	// .slick-slide {
+	// 	opacity:0;
 
-		&.slick-current {
-			opacity:1;
-		}
-	}
+	// 	&.slick-current {
+	// 		opacity:1;
+	// 	}
+	// }
 
 	& > img {
 		max-width:100%;
