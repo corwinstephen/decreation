@@ -3,7 +3,7 @@ label: project
 
 [content]
 {{cms:files images, render: false}}
-<div class='featuredimage-background desktop'>
+<div class='featuredimage-background desktop project'>
 	<div class='slick'>
 		<div>{{cms:file featured_image, as: image}}</div>
 		{{cms:helper render_project_images}}
@@ -11,6 +11,8 @@ label: project
 </div>
 
 <div class='mobile margin-top margin-bottom'>{{cms:file featured_image, as: image}}</div>
+
+<span class='projectinfo-bigtitle'>{{cms:text name}}</span>
 
 <ul class='projectinfo'>
 	<li class='margin-bottom'><a class='xicon' href='/'>{{ cms:file_link 19, as: image }}</a></li>

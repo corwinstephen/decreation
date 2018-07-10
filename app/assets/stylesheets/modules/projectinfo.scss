@@ -15,3 +15,12 @@ ul.projectinfo {
 		padding:0 1rem;
 	}
 }
+
+.projectinfo-bigtitle {
+	font-family:$font-title;
+	font-size:48px;
+	position:absolute;
+	top:10%;
+	left:100px;
+	font-weight:500;
+}

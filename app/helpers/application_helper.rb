@@ -26,7 +26,7 @@ module ApplicationHelper
 
 	def project_image_urls
 		output = project_pages.map do |p|
-			attachments = cms_fragment_content(:images, p).try(:attachments)
+			attachments = cms_fragment_content(:featured_image, p).try(:attachments)
 			image_url = attachments ? rails_blob_path(attachments.first) : nil
 			{ id: p.id, image_url: image_url }
 		end
