@@ -3,8 +3,8 @@
 	left:50%;
 	top:50%;
 	transform:translateX(-50%) translateY(-50%);
-	max-height:80vh;
-	max-width:80vw;
+	max-height:100vh;
+	width:100vw;
 	overflow:hidden;
 	opacity:.7;
 
@@ -39,4 +39,31 @@
 			max-width:66.666vw;
 		}
 	}
+}
+
+.featuredimage-next {
+  right: 0;
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  bottom:0;
+
+  &:hover {
+  	cursor:e-resize;
+  }
+}
+
+.featuredimage-prev {
+  left: 0;
+  position: absolute;
+  width: 50%;
+  bottom:0;
+  height: 100%;
+  top: 0;
+  z-index:10;
+
+  &:hover {
+  	cursor:w-resize;
+  }
 }

@@ -28,12 +28,11 @@ label: project
 [js]
 $(document).on('turbolinks:load', function(){
 	$('.slick').slick({
-	  responsive: true,
+	  focusOnSelect: true,
 	  adaptiveHeight: true,
-	  variableWidth: true,
-	  arrows: true,
-	  mobileFirst: true,
-	  centerMode: true
+	  focusOnSelect: true,
+	  nextArrow: "<div class='featuredimage-next'></div>",
+	  prevArrow: "<div class='featuredimage-prev'></div>"
 	});
 });
 
