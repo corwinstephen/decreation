@@ -3,19 +3,23 @@ label: project
 
 [content]
 {{cms:files images, render: false}}
-<div class='featuredimage-background'>
+<div class='featuredimage-background desktop'>
 	<div class='slick'>
 		{{cms:helper render_project_images}}
 	</div>
 </div>
 
 <ul class='projectinfo'>
-	<li class='margin-bottom'><a href='/'>X</a></li>
+	<li class='margin-bottom'><a class='xicon' href='/'>{{ cms:file_link 19, as: image }}</a></li>
 	<li>{{cms:text name}}</li>
 	<li>{{cms:text org}}</li>
 	<li>{{cms:text date}}</li>
 	<li class='margin-top'>{{cms:wysiwyg description}}</li>
 </ul>
+
+<div class='mobile margin-top'>
+	{{cms:helper render_project_images}}
+</div>
 
 
 [js]

@@ -39,3 +39,22 @@ a {
   display: table;
   clear: both;
 }
+
+a.xicon {
+	img {
+		width:1rem;
+		height:1rem;
+	}
+}
+
+.desktop {
+	@media (max-width: $mobile-break-width){
+		display:none;
+	}
+}
+
+.mobile {
+	@media (min-width: $mobile-break-width){
+		display:none;
+	}
+}
