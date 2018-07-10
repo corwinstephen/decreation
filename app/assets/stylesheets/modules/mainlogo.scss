@@ -10,7 +10,8 @@
 	}
 
 	@media (max-width: $mobile-break-width){
-		position:relative;
+		position:static;
 		display:block;
+		margin:1rem;
 	}
 }
