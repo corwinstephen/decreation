@@ -11,6 +11,13 @@ ul.contact {
 		margin-left:-175px;
 	}
 
+	&.about {
+		li {
+			display:block;
+			float:none;
+		}
+	}
+
 	li {
 		@extend .hoverlinks;
 		margin-top:4px;
@@ -49,6 +56,4 @@ ul.contact {
 			display:block;
 		}
 	}
-
-
 }
