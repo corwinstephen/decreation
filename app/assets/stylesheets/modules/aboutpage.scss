@@ -4,11 +4,11 @@
 		padding:100px 0;
 		width:80vw;
 		min-width:777px;
-		font-size:20px;
-		line-height:26px;
+		font-size:24px;
+		line-height:30px;
 		max-height:100vh;
 		overflow:scroll;
-		margin-left:150px;
+		margin-left:90px;
 
 		.aboutpage-about {
 			margin-bottom:3rem;
@@ -16,19 +16,24 @@
 
 		.aboutpage-2col, .aboutpage-1col {
 			box-sizing:border-box;
-			padding-right:3rem;
 			padding-bottom:3rem;
+			text-align:justify;
 		}
 
 		.aboutpage-2col {
-			width:66%;
+			width:64%;
 			float:left;
 			margin-bottom:3rem;
+			margin-right:3%;
 
 			.aboutpage-1col {
-				width:50%;
+				width:48%;
 				float:left;
+				margin-right:3%;
 
+				&:last-child {
+					margin-right:0;
+				}
 			}
 		}
 
