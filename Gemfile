@@ -33,7 +33,7 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-gem "comfortable_mexican_sofa", "~> 2.0.16"
+gem "comfortable_mexican_sofa", "~> 2.0.17"
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'haml'
 gem 'aws-sdk'

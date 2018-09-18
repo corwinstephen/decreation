@@ -830,7 +830,7 @@ DEPENDENCIES
   byebug
   capybara (~> 2.13)
   coffee-rails (~> 4.2)
-  comfortable_mexican_sofa (~> 2.0.16)
+  comfortable_mexican_sofa (~> 2.0.17)
   haml
   jbuilder (~> 2.5)
   jquery-slick-rails
