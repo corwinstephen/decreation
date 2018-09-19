@@ -12,7 +12,15 @@ module ApplicationHelper
 	end
 
 	def sidenav_pages
-		ages = @cms_site.pages.for_category('sidenav').published
+		@cms_site.pages.for_category('sidenav').published
+	end
+
+	def yearlist
+		fragment_content = @cms_site.pages.find_by(label: 'projects').children.published.map do |p|
+			cms_fragment_content(:date, p)
+		end
+
+		fragment_content.uniq.reject(&:blank?).sort
 	end
 
 	def project_pages(category = nil)
@@ -21,6 +29,7 @@ module ApplicationHelper
 
 		pages = @cms_site.pages.find_by(label: 'projects').children.published
 		pages = pages.for_category(category) if category
+		pages = pages.select{|p| cms_fragment_content(:date, p).downcase.strip == params[:year].downcase.strip } if params[:year].present?
 		pages
 	end
 

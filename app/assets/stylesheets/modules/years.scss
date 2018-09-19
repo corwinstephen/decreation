@@ -1,0 +1,41 @@
+.years {
+	ul {
+		li {
+			@extend .hoverlinks;
+			display:inline-block;
+			&:after {
+				margin:0 5px;
+				content:'/';
+			}
+			&:first-child:before {
+				margin-right:5px;
+				content:'/ ';	
+			}
+		}
+	}
+
+	@media (min-width: $mobile-break-width){
+		position:absolute;
+		right:30px;
+		transform: rotate(90deg);
+		margin-top:120px;
+		top:1rem;
+		font-size:14px;
+
+		ul {
+			li {
+				span:before, span:after {
+					height:3px !important;
+					margin-top: -1.5px !important;
+				}
+			}
+		}
+	}
+
+	@media (max-width: $mobile-break-width){
+		position:relative;
+		display:block;
+		margin-left:1rem;
+		margin-top:1rem;
+	}
+}
