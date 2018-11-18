@@ -81,8 +81,8 @@ end
 
 # Default credentials for ComfortableMexicanSofa::AccessControl::AdminAuthentication
 # YOU REALLY WANT TO CHANGE THIS BEFORE PUTTING YOUR SITE LIVE
-ComfortableMexicanSofa::AccessControl::AdminAuthentication.username = "username"
-ComfortableMexicanSofa::AccessControl::AdminAuthentication.password = "password"
+ComfortableMexicanSofa::AccessControl::AdminAuthentication.username = ENV['CMS_ADMIN_USERNAME'] || "decreation"
+ComfortableMexicanSofa::AccessControl::AdminAuthentication.password = ENV['CMS_ADMIN_PASSWORD'] || "G7ZBn3Uf"
 
 # Uncomment this module and `config.admin_auth` above to use custom admin authentication
 # module ComfyAdminAuthentication
