@@ -108,3 +108,416 @@ a.xicon img {
     display: none;
   }
 }
+
+#main {
+	position:relative;
+	min-height:100vh;
+	width:100vw;
+}
+
+.categories ul li {
+  display: inline-block;
+}
+.categories ul li:after {
+  margin: 0 5px;
+  content: '/';
+}
+.categories ul li:first-child:before {
+  margin-right: 5px;
+  content: '/ ';
+}
+@media (min-width: 650px) {
+  .categories {
+    position: absolute;
+    right: -102px;
+    transform: rotate(90deg);
+    margin-top: 120px;
+    top: 1rem;
+    font-size: 14px;
+  }
+  .categories ul li span:before, .categories ul li span:after {
+    height: 3px !important;
+    margin-top: -1.5px !important;
+  }
+}
+@media (max-width: 650px) {
+  .categories {
+    position: relative;
+    display: block;
+    margin-left: 1rem;
+    margin-top: 4rem;
+  }
+}
+
+.years ul li {
+  display: inline-block;
+}
+/* line 6, /Users/Muffin/Code/decreation/app/assets/stylesheets/modules/years.scss */
+.years ul li:after {
+  margin: 0 5px;
+  content: '/';
+}
+/* line 10, /Users/Muffin/Code/decreation/app/assets/stylesheets/modules/years.scss */
+.years ul li:first-child:before {
+  margin-right: 5px;
+  content: '/ ';
+}
+@media (min-width: 650px) {
+  /* line 1, /Users/Muffin/Code/decreation/app/assets/stylesheets/modules/years.scss */
+  .years {
+    position: absolute;
+    right: 30px;
+    transform: rotate(90deg);
+    margin-top: 120px;
+    top: 1rem;
+    font-size: 14px;
+  }
+  /* line 27, /Users/Muffin/Code/decreation/app/assets/stylesheets/modules/years.scss */
+  .years ul li span:before, .years ul li span:after {
+    height: 3px !important;
+    margin-top: -1.5px !important;
+  }
+}
+@media (max-width: 650px) {
+  /* line 1, /Users/Muffin/Code/decreation/app/assets/stylesheets/modules/years.scss */
+  .years {
+    position: relative;
+    display: block;
+    margin-left: 1rem;
+    margin-top: 1rem;
+  }
+}
+
+/* line 1, /Users/Muffin/Code/decreation/app/assets/stylesheets/modules/mainnav.scss */
+.mainnav {
+  font-family: 'Prophet', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  text-transform: uppercase;
+  position: absolute;
+}
+@media (min-width: 650px) {
+  /* line 10, /Users/Muffin/Code/decreation/app/assets/stylesheets/modules/mainnav.scss */
+  .mainnav.bottom {
+    bottom: 1rem;
+    left: 50%;
+    margin-left: -20px;
+    text-align: center;
+  }
+  /* line 16, /Users/Muffin/Code/decreation/app/assets/stylesheets/modules/mainnav.scss */
+  .mainnav.bottom img {
+    width: 2rem;
+  }
+  /* line 21, /Users/Muffin/Code/decreation/app/assets/stylesheets/modules/mainnav.scss */
+  .mainnav.top {
+    position: absolute;
+    top: 1rem;
+    transform: rotate(180deg);
+    left: 50%;
+    margin-left: -20px;
+  }
+}
+@media (max-width: 650px) {
+  /* line 1, /Users/Muffin/Code/decreation/app/assets/stylesheets/modules/mainnav.scss */
+  .mainnav {
+    bottom: 1rem;
+    width: 50%;
+    text-align: center;
+  }
+  /* line 35, /Users/Muffin/Code/decreation/app/assets/stylesheets/modules/mainnav.scss */
+  .mainnav.top {
+    left: 1rem;
+    text-align: left;
+  }
+  /* line 40, /Users/Muffin/Code/decreation/app/assets/stylesheets/modules/mainnav.scss */
+  .mainnav.bottom {
+    right: 1rem;
+    text-align: right;
+  }
+  /* line 44, /Users/Muffin/Code/decreation/app/assets/stylesheets/modules/mainnav.scss */
+  .mainnav.bottom img {
+    display: none;
+  }
+}
+
+.mainlogo {
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  height: 60px;
+  z-index: 1000;
+}
+/* line 8, /Users/Muffin/Code/decreation/app/assets/stylesheets/modules/mainlogo.scss */
+.mainlogo img {
+  height: 55px;
+}
+@media (max-width: 650px) {
+  /* line 1, /Users/Muffin/Code/decreation/app/assets/stylesheets/modules/mainlogo.scss */
+  .mainlogo {
+    position: static;
+    display: block;
+    margin: 1rem;
+  }
+}
+
+/* line 2, /Users/Muffin/Code/decreation/app/assets/stylesheets/modules/hoverlinks.scss */
+.hoverlinks a, ul.contact li a, .mainnav a {
+  position: relative;
+  cursor: pointer;
+}
+/* line 7, /Users/Muffin/Code/decreation/app/assets/stylesheets/modules/hoverlinks.scss */
+.hoverlinks a:before, ul.contact li a:before, .mainnav a:before, .hoverlinks a:after, ul.contact li a:after, .mainnav a:after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 7px;
+  top: 50%;
+  margin-top: -3.5px;
+  background: #333;
+}
+/* line 17, /Users/Muffin/Code/decreation/app/assets/stylesheets/modules/hoverlinks.scss */
+.hoverlinks a:before, ul.contact li a:before, .mainnav a:before, .hoverlinks a:after, ul.contact li a:after, .mainnav a:after {
+  left: -1px;
+}
+/* line 21, /Users/Muffin/Code/decreation/app/assets/stylesheets/modules/hoverlinks.scss */
+.hoverlinks a:after, ul.contact li a:after, .mainnav a:after {
+  right: 2.5px;
+  background: #333;
+  transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+/* line 27, /Users/Muffin/Code/decreation/app/assets/stylesheets/modules/hoverlinks.scss */
+.hoverlinks a:hover:before, ul.contact li a:hover:before, .mainnav a:hover:before {
+  background: #333;
+  width: 100%;
+  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+/* line 33, /Users/Muffin/Code/decreation/app/assets/stylesheets/modules/hoverlinks.scss */
+.hoverlinks a:hover:after, ul.contact li a:hover:after, .mainnav a:hover:after {
+  background: transparent;
+  width: 100%;
+  transition: 0s;
+}
+
+ul.contact {
+  list-style: none;
+}
+/* line 4, /Users/Muffin/Code/decreation/app/assets/stylesheets/modules/contact.scss */
+ul.contact.home {
+  position: absolute;
+  left: 1rem;
+  bottom: 1rem;
+  font-size: 12px;
+  transform: rotate(-90deg);
+  margin-bottom: 190px;
+  margin-left: -175px;
+}
+/* line 15, /Users/Muffin/Code/decreation/app/assets/stylesheets/modules/contact.scss */
+ul.contact.about li {
+  display: block;
+  float: none;
+}
+/* line 21, /Users/Muffin/Code/decreation/app/assets/stylesheets/modules/contact.scss */
+ul.contact li {
+  margin-top: 4px;
+  margin-right: 2rem;
+  float: left;
+  display: inline-block;
+}
+/* line 29, /Users/Muffin/Code/decreation/app/assets/stylesheets/modules/contact.scss */
+ul.contact li span {
+  display: block;
+}
+/* line 33, /Users/Muffin/Code/decreation/app/assets/stylesheets/modules/contact.scss */
+ul.contact li span:before, ul.contact li span:after {
+  height: 3px !important;
+  margin-top: -1.5px !important;
+}
+/* line 38, /Users/Muffin/Code/decreation/app/assets/stylesheets/modules/contact.scss */
+ul.contact li a {
+  text-decoration: none;
+  color: #333;
+  display: inline-block;
+  margin-left: 5px;
+  letter-spacing: 1px;
+}
+@media (max-width: 650px) {
+  /* line 1, /Users/Muffin/Code/decreation/app/assets/stylesheets/modules/contact.scss */
+  ul.contact {
+    display: none;
+  }
+}
+/* line 51, /Users/Muffin/Code/decreation/app/assets/stylesheets/modules/contact.scss */
+ul.contact.mobile {
+  display: none;
+}
+@media (max-width: 650px) {
+  /* line 51, /Users/Muffin/Code/decreation/app/assets/stylesheets/modules/contact.scss */
+  ul.contact.mobile {
+    margin-bottom: 2rem;
+    display: block;
+  }
+}
+
+.featuredimage-background {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  max-height: 80vh;
+  max-width: 80vw;
+  overflow: hidden;
+  opacity: .7;
+}
+/* line 11, /Users/Muffin/Code/decreation/app/assets/stylesheets/modules/featuredimage.scss */
+.featuredimage-background.project {
+  max-height: 100vh;
+  max-width: 100vw;
+  margin: 0 auto;
+}
+/* line 17, /Users/Muffin/Code/decreation/app/assets/stylesheets/modules/featuredimage.scss */
+.featuredimage-background .slick-slide img {
+  margin: auto;
+}
+/* line 41, /Users/Muffin/Code/decreation/app/assets/stylesheets/modules/featuredimage.scss */
+.featuredimage-background > img {
+  max-width: 100%;
+  max-height: 100%;
+}
+@media (max-width: 650px) {
+  /* line 46, /Users/Muffin/Code/decreation/app/assets/stylesheets/modules/featuredimage.scss */
+  .featuredimage-background img {
+    max-height: 33.3333vh;
+    max-width: 66.666vw;
+  }
+}
+
+/* line 54, /Users/Muffin/Code/decreation/app/assets/stylesheets/modules/featuredimage.scss */
+.featuredimage-next {
+  right: 0;
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+}
+/* line 62, /Users/Muffin/Code/decreation/app/assets/stylesheets/modules/featuredimage.scss */
+.featuredimage-next:hover {
+  cursor: e-resize;
+}
+
+/* line 67, /Users/Muffin/Code/decreation/app/assets/stylesheets/modules/featuredimage.scss */
+.featuredimage-prev {
+  left: 0;
+  position: absolute;
+  width: 50%;
+  bottom: 0;
+  height: 100%;
+  top: 0;
+  z-index: 10;
+}
+/* line 76, /Users/Muffin/Code/decreation/app/assets/stylesheets/modules/featuredimage.scss */
+.featuredimage-prev:hover {
+  cursor: w-resize;
+}
+
+.margin-top {
+  margin-top: 1em !important;
+  margin-top: 1rem !important;
+}
+
+/* line 2, /Users/Muffin/Code/decreation/app/assets/stylesheets/modules/helpers.scss */
+.margin-bottom {
+  margin-bottom: 1em !important;
+  margin-bottom: 1rem !important;
+}
+
+/* line 2, /Users/Muffin/Code/decreation/app/assets/stylesheets/modules/helpers.scss */
+.margin-left {
+  margin-left: 1em !important;
+  margin-left: 1rem !important;
+}
+
+/* line 2, /Users/Muffin/Code/decreation/app/assets/stylesheets/modules/helpers.scss */
+.margin-right {
+  margin-right: 1em !important;
+  margin-right: 1rem !important;
+}
+
+@media (min-width: 650px) {
+  /* line 1, /Users/Muffin/Code/decreation/app/assets/stylesheets/modules/aboutpage.scss */
+  .aboutpage {
+    box-sizing: border-box;
+    padding: 100px 0;
+    min-width: 777px;
+    font-size: 22px;
+    line-height: 28px;
+    max-height: 100vh;
+    overflow: scroll;
+    padding: 150px;
+  }
+  /* line 12, /Users/Muffin/Code/decreation/app/assets/stylesheets/modules/aboutpage.scss */
+  .aboutpage .aboutpage-about {
+    margin-bottom: 3rem;
+  }
+  /* line 16, /Users/Muffin/Code/decreation/app/assets/stylesheets/modules/aboutpage.scss */
+  .aboutpage .aboutpage-2col, .aboutpage .aboutpage-1col {
+    box-sizing: border-box;
+    padding-bottom: 3rem;
+    text-align: justify;
+  }
+  /* line 22, /Users/Muffin/Code/decreation/app/assets/stylesheets/modules/aboutpage.scss */
+  .aboutpage .aboutpage-2col {
+    width: 63%;
+    float: left;
+    margin-bottom: 3rem;
+    margin-right: 3%;
+  }
+  /* line 28, /Users/Muffin/Code/decreation/app/assets/stylesheets/modules/aboutpage.scss */
+  .aboutpage .aboutpage-2col .aboutpage-1col {
+    width: 48%;
+    float: left;
+    margin-right: 3%;
+  }
+  /* line 33, /Users/Muffin/Code/decreation/app/assets/stylesheets/modules/aboutpage.scss */
+  .aboutpage .aboutpage-2col .aboutpage-1col:last-child {
+    margin-right: 0;
+  }
+  /* line 39, /Users/Muffin/Code/decreation/app/assets/stylesheets/modules/aboutpage.scss */
+  .aboutpage .aboutpage-1col {
+    width: 33%;
+    float: left;
+  }
+  /* line 43, /Users/Muffin/Code/decreation/app/assets/stylesheets/modules/aboutpage.scss */
+  .aboutpage .aboutpage-1col img {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+@media (max-width: 650px) {
+  /* line 1, /Users/Muffin/Code/decreation/app/assets/stylesheets/modules/aboutpage.scss */
+  .aboutpage {
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 2rem;
+    padding: 0 1rem;
+    padding-bottom: 3rem;
+  }
+  /* line 58, /Users/Muffin/Code/decreation/app/assets/stylesheets/modules/aboutpage.scss */
+  .aboutpage .aboutpage-about {
+    margin-bottom: 1rem;
+  }
+  /* line 62, /Users/Muffin/Code/decreation/app/assets/stylesheets/modules/aboutpage.scss */
+  .aboutpage .aboutpage-2col, .aboutpage .aboutpage-1col {
+    margin-bottom: 1rem;
+  }
+  /* line 66, /Users/Muffin/Code/decreation/app/assets/stylesheets/modules/aboutpage.scss */
+  .aboutpage img {
+    max-width: 100%;
+  }
+}
+
+/* line 73, /Users/Muffin/Code/decreation/app/assets/stylesheets/modules/aboutpage.scss */
+.aboutpage-contact li {
+  display: block;
+  float: none;
+}

@@ -1,77 +1,77 @@
-.aboutpage {
-	@media (min-width: $mobile-break-width){
-		box-sizing:border-box;
-		padding:100px 0;
-		min-width:777px;
-		font-size:22px;
-		line-height:28px;
-		max-height:100vh;
-		overflow:scroll;
-		padding:150px;
+// .aboutpage {
+// 	@media (min-width: $mobile-break-width){
+// 		box-sizing:border-box;
+// 		padding:100px 0;
+// 		min-width:777px;
+// 		font-size:22px;
+// 		line-height:28px;
+// 		max-height:100vh;
+// 		overflow:scroll;
+// 		padding:150px;
 
-		.aboutpage-about {
-			margin-bottom:3rem;
-		}
+// 		.aboutpage-about {
+// 			margin-bottom:3rem;
+// 		}
 
-		.aboutpage-2col, .aboutpage-1col {
-			box-sizing:border-box;
-			padding-bottom:3rem;
-			text-align:justify;
-		}
+// 		.aboutpage-2col, .aboutpage-1col {
+// 			box-sizing:border-box;
+// 			padding-bottom:3rem;
+// 			text-align:justify;
+// 		}
 
-		.aboutpage-2col {
-			width:63%;
-			float:left;
-			margin-bottom:3rem;
-			margin-right:3%;
+// 		.aboutpage-2col {
+// 			width:63%;
+// 			float:left;
+// 			margin-bottom:3rem;
+// 			margin-right:3%;
 
-			.aboutpage-1col {
-				width:48%;
-				float:left;
-				margin-right:3%;
+// 			.aboutpage-1col {
+// 				width:48%;
+// 				float:left;
+// 				margin-right:3%;
 
-				&:last-child {
-					margin-right:0;
-				}
-			}
-		}
+// 				&:last-child {
+// 					margin-right:0;
+// 				}
+// 			}
+// 		}
 
-		.aboutpage-1col {
-			width:33%;
-			float:left;
+// 		.aboutpage-1col {
+// 			width:33%;
+// 			float:left;
 
-			img {
-				width:100%;
-				margin-bottom:1rem;
-			}
-		}
+// 			img {
+// 				width:100%;
+// 				margin-bottom:1rem;
+// 			}
+// 		}
 
-	}
+// 	}
 
-	@media (max-width: $mobile-break-width){
-		font-size:18px;
-		line-height:30px;
-		margin-top:2rem;
-		padding:0 1rem;
-		padding-bottom:3rem;
+// 	@media (max-width: $mobile-break-width){
+// 		font-size:18px;
+// 		line-height:30px;
+// 		margin-top:2rem;
+// 		padding:0 1rem;
+// 		padding-bottom:3rem;
 
-		.aboutpage-about {
-			margin-bottom:1rem;
-		}
+// 		.aboutpage-about {
+// 			margin-bottom:1rem;
+// 		}
 
-		.aboutpage-2col, .aboutpage-1col {
-			margin-bottom:1rem;
-		}
+// 		.aboutpage-2col, .aboutpage-1col {
+// 			margin-bottom:1rem;
+// 		}
 
-		img {
-			max-width:100%;
-		}
-	}
-}
+// 		img {
+// 			max-width:100%;
+// 		}
+// 	}
+// }
 
-.aboutpage-contact {
-	li {
-		display:block;
-		float:none;
-	}
-}
+// .aboutpage-contact {
+// 	li {
+// 		display:block;
+// 		float:none;
+// 	}
+// }

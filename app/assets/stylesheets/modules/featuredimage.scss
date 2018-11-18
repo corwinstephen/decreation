@@ -1,79 +1,79 @@
-.featuredimage-background {
-	position:absolute;
-	left:50%;
-	top:50%;
-	transform:translateX(-50%) translateY(-50%);
-	max-height:80vh;
-	max-width:80vw;
-	overflow:hidden;
-	opacity:.7;
+// .featuredimage-background {
+// 	position:absolute;
+// 	left:50%;
+// 	top:50%;
+// 	transform:translateX(-50%) translateY(-50%);
+// 	max-height:80vh;
+// 	max-width:80vw;
+// 	overflow:hidden;
+// 	opacity:.7;
 
-	&.project {
-		max-height:100vh;
-		max-width:100vw;
-		margin:0 auto;
-	}
+// 	&.project {
+// 		max-height:100vh;
+// 		max-width:100vw;
+// 		margin:0 auto;
+// 	}
 
-	.slick-slide img {
-		margin:auto;
-	}
+// 	.slick-slide img {
+// 		margin:auto;
+// 	}
 
-	// .slick-initialized {
-	// 	.slick-slide {
-	// 		max-width:80vw;
-	// 		max-height:80vh;
+// 	// .slick-initialized {
+// 	// 	.slick-slide {
+// 	// 		max-width:80vw;
+// 	// 		max-height:80vh;
 
-	// 		img {
-	// 			max-width:80vw;
-	// 			max-height:80vh;				
-	// 		}
-	// 	}
-	// }
+// 	// 		img {
+// 	// 			max-width:80vw;
+// 	// 			max-height:80vh;				
+// 	// 		}
+// 	// 	}
+// 	// }
 
-	// .slick-slide {
-	// 	opacity:0;
+// 	// .slick-slide {
+// 	// 	opacity:0;
 
-	// 	&.slick-current {
-	// 		opacity:1;
-	// 	}
-	// }
+// 	// 	&.slick-current {
+// 	// 		opacity:1;
+// 	// 	}
+// 	// }
 
-	& > img {
-		max-width:100%;
-		max-height:100%;
-	}
+// 	& > img {
+// 		max-width:100%;
+// 		max-height:100%;
+// 	}
 
-	img {
-		@media (max-width: $mobile-break-width){
-			max-height:33.3333vh;
-			max-width:66.666vw;
-		}
-	}
-}
+// 	img {
+// 		@media (max-width: $mobile-break-width){
+// 			max-height:33.3333vh;
+// 			max-width:66.666vw;
+// 		}
+// 	}
+// }
 
-.featuredimage-next {
-  right: 0;
-  position: absolute;
-  width: 50%;
-  height: 100%;
-  top: 0;
-  bottom:0;
+// .featuredimage-next {
+//   right: 0;
+//   position: absolute;
+//   width: 50%;
+//   height: 100%;
+//   top: 0;
+//   bottom:0;
 
-  &:hover {
-  	cursor:e-resize;
-  }
-}
+//   &:hover {
+//   	cursor:e-resize;
+//   }
+// }
 
-.featuredimage-prev {
-  left: 0;
-  position: absolute;
-  width: 50%;
-  bottom:0;
-  height: 100%;
-  top: 0;
-  z-index:10;
+// .featuredimage-prev {
+//   left: 0;
+//   position: absolute;
+//   width: 50%;
+//   bottom:0;
+//   height: 100%;
+//   top: 0;
+//   z-index:10;
 
-  &:hover {
-  	cursor:w-resize;
-  }
-}
+//   &:hover {
+//   	cursor:w-resize;
+//   }
+// }

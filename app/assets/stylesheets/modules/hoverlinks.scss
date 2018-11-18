@@ -1,38 +1,38 @@
-.hoverlinks {
-	a {
-	  position: relative;
-	  cursor: pointer;
-	}
+// .hoverlinks {
+// 	a {
+// 	  position: relative;
+// 	  cursor: pointer;
+// 	}
 
-	a:before, a:after {
-	  content: '';
-	  position: absolute;
-	  width: 0%;
-	  height: 7px;
-	  top: 50%;
-	  margin-top: -3.5px;
-	  background: #333;
-	}
+// 	a:before, a:after {
+// 	  content: '';
+// 	  position: absolute;
+// 	  width: 0%;
+// 	  height: 7px;
+// 	  top: 50%;
+// 	  margin-top: -3.5px;
+// 	  background: #333;
+// 	}
 
-	a:before, a:after {
-	  left: -1px;
-	}
+// 	a:before, a:after {
+// 	  left: -1px;
+// 	}
 
-	a:after {
-	  right: 2.5px;
-	  background: #333;
-	  transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
-	}
+// 	a:after {
+// 	  right: 2.5px;
+// 	  background: #333;
+// 	  transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+// 	}
 
-	a:hover:before {
-	  background: #333;
-	  width: 100%;
-	  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
-	}
+// 	a:hover:before {
+// 	  background: #333;
+// 	  width: 100%;
+// 	  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+// 	}
 
-	a:hover:after {
-	  background: transparent;
-	  width: 100%;
-	  transition: 0s;
-	}
-}
+// 	a:hover:after {
+// 	  background: transparent;
+// 	  width: 100%;
+// 	  transition: 0s;
+// 	}
+// }

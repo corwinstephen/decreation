@@ -43,3 +43,49 @@ $(document).on('turbolinks:request-start', function(){
 });
 
 [css]
+.projectlist {
+  font-family: "Prophet", sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 42px;
+}
+@media (min-width: 650px) {
+  /* line 1, /Users/Muffin/Code/decreation/app/assets/stylesheets/modules/projectlist.scss */
+  .projectlist {
+    margin-left: -325px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 650px;
+    transform: translateY(-50%);
+    text-align: center;
+  }
+}
+/* line 17, /Users/Muffin/Code/decreation/app/assets/stylesheets/modules/projectlist.scss */
+.projectlist ul {
+  list-style: none;
+}
+/* line 20, /Users/Muffin/Code/decreation/app/assets/stylesheets/modules/projectlist.scss */
+.projectlist ul li {
+  display: inline-block;
+  letter-spacing: 1.2px;
+}
+/* line 26, /Users/Muffin/Code/decreation/app/assets/stylesheets/modules/projectlist.scss */
+.projectlist ul li:after {
+  content: ' /';
+}
+/* line 30, /Users/Muffin/Code/decreation/app/assets/stylesheets/modules/projectlist.scss */
+.projectlist ul li:last-child:after {
+  content: '';
+}
+@media (max-width: 650px) {
+  /* line 1, /Users/Muffin/Code/decreation/app/assets/stylesheets/modules/projectlist.scss */
+  .projectlist {
+    width: 100%;
+    padding: 0 1rem;
+    margin-top: 3rem;
+    box-sizing: border-box;
+    font-size: 30px;
+    line-height: 42px;
+  }
+}

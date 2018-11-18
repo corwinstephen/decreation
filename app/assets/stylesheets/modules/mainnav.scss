@@ -1,49 +1,49 @@
-.mainnav {
-	font-family:'Prophet', sans-serif;
-	font-weight:500;
-	font-size:24px;
-	text-transform:uppercase;
-	position:absolute;
-	@extend .hoverlinks;
+// .mainnav {
+// 	font-family:'Prophet', sans-serif;
+// 	font-weight:500;
+// 	font-size:24px;
+// 	text-transform:uppercase;
+// 	position:absolute;
+// 	@extend .hoverlinks;
 
-	@media (min-width: $mobile-break-width){
-		&.bottom {
-			bottom:1rem;
-		  left:50%;
-		  margin-left:-20px;
-		  text-align:center;
+// 	@media (min-width: $mobile-break-width){
+// 		&.bottom {
+// 			bottom:1rem;
+// 		  left:50%;
+// 		  margin-left:-20px;
+// 		  text-align:center;
 
-		  img {
-		  	width:2rem;
-		  }
-		}
+// 		  img {
+// 		  	width:2rem;
+// 		  }
+// 		}
 
-		&.top {
-			position:absolute;
-			top:1rem;
-		  transform: rotate(180deg);
-		  left:50%;
-		  margin-left:-20px;
-		}
-	}
+// 		&.top {
+// 			position:absolute;
+// 			top:1rem;
+// 		  transform: rotate(180deg);
+// 		  left:50%;
+// 		  margin-left:-20px;
+// 		}
+// 	}
 
-	@media (max-width: $mobile-break-width){
-		bottom:1rem;
-		width:50%;
-		text-align:center;
+// 	@media (max-width: $mobile-break-width){
+// 		bottom:1rem;
+// 		width:50%;
+// 		text-align:center;
 
-		&.top {
-			left:1rem;;
-			text-align:left;
-		}
+// 		&.top {
+// 			left:1rem;;
+// 			text-align:left;
+// 		}
 
-		&.bottom {
-			right:1rem;
-			text-align:right;
+// 		&.bottom {
+// 			right:1rem;
+// 			text-align:right;
 
-			img {
-		  	display:none;
-		  }
-		}
-	}
-}
+// 			img {
+// 		  	display:none;
+// 		  }
+// 		}
+// 	}
+// }
