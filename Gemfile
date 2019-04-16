@@ -36,6 +36,7 @@ gem 'jbuilder', '~> 2.5'
 gem "comfortable_mexican_sofa", "~> 2.0.18"
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'haml'
+gem 'haml-rails', '< 2.0.0'
 gem 'aws-sdk'
 gem 'webpacker', '~> 3.5'
 gem "jquery-slick-rails"
